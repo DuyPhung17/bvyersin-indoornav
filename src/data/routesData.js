@@ -13,19 +13,19 @@ export const routesConfig = {
       instructions: [
         {
           text: "Tại tầng 1 Khu Khám Bệnh, đi vào thang máy. Bấm tầng 4",
-          image: "/images/route1_destA_step1.jpg",
+          image: "images/route1_destA_step1.jpg",
         },
         {
           text: "Lên đến tầng 4, tiếp theo rẽ phải.",
-          image: "/images/route1_destA_step2.jpg",
+          image: "images/route1_destA_step2.jpg",
         },
         {
           text: "Đi thẳng đến gần cuối dãy.",
-          image: "/images/route1_destA_step3.jpg",
+          image: "images/route1_destA_step3.jpg",
         },
         {
           text: "Phòng IT nằm ở bên tay phải của bạn.",
-          image: "/images/route1_destA_step4.jpg",
+          image: "images/route1_destA_step4.jpg",
         },
       ],
     },

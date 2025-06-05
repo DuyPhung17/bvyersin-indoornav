@@ -9,6 +9,8 @@ const InstructionSlider = ({ instructions, destinationName }) => {
     return null;
   }
 
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <div className="instruction-slider">
       <h2 className="slider-title">Hướng dẫn đến: {destinationName}</h2>
@@ -30,7 +32,7 @@ const InstructionSlider = ({ instructions, destinationName }) => {
             </div>
             <div className="slide-image-container">
               <img
-                src={step.image}
+                src={`${baseUrl}${step.image}`}
                 alt={`Bước ${index + 1}`}
                 className="slide-image"
               />
