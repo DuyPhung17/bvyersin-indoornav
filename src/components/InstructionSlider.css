@@ -1,0 +1,99 @@
+.instruction-slider {
+  margin-top: 20px;
+}
+
+.slider-title {
+  font-size: 1.3em;
+  color: #343a40;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.swiper.mySwiper { /* Class được gán cho component Swiper */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.instruction-step-slide {
+  background-color: #ffffff;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 350px; /* Đảm bảo chiều cao đồng nhất cho các slide */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Căn nội dung lên trên */
+}
+
+.slide-image-container {
+  width: 100%;
+  max-height: 400px; /* Giới hạn chiều cao khung chứa ảnh */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài */
+}
+
+.slide-image {
+  max-width: 100%;
+  max-height: 100%; /* Ảnh sẽ co lại để vừa khung chứa */
+  object-fit: contain; /* Hiển thị toàn bộ ảnh, giữ tỷ lệ */
+  border-radius: 6px;
+}
+
+.slide-text-content {
+  margin-top: auto; /* Đẩy text xuống dưới nếu ảnh nhỏ */
+  margin-bottom: 15px;
+}
+
+.step-number {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.step-description {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #495057;
+  margin: 0;
+}
+
+/* Style cho nút và pagination của Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff !important; /* Ghi đè màu mặc định */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 34px !important;
+  height: 34px !important;
+  margin-top: 0 !important; /* Căn giữa theo chiều dọc */
+}
+
+.mySwiper .swiper-button-next{
+  right: 25px;
+}
+
+.mySwiper .swiper-button-prev{
+  left: 25px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important; /* Kích thước icon mũi tên */
+  font-weight: 900;
+}
+
+.swiper-pagination-bullet {
+  background: #cccccc !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007bff !important;
+}

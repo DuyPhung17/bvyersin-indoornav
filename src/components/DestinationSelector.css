@@ -1,0 +1,50 @@
+.destination-selector {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+  }
+  
+  .destination-selector.disabled {
+    opacity: 0.7;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #fff;
+  }
+  
+  .form-group input[type="text"]:disabled,
+  .form-group select:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    color: #6c757d;
+  }
+  .no-destinations-info {
+      font-size: 0.9em;
+      color: #6c757d;
+      margin-top: 5px;
+      font-style: italic;
+  }
