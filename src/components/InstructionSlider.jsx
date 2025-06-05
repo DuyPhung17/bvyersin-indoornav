@@ -8,7 +8,7 @@ const InstructionSlider = ({ instructions, destinationName }) => {
   if (!instructions || instructions.length === 0) {
     return null;
   }
-  console.log("instructions", instructions);
+
   return (
     <div className="instruction-slider">
       <h2 className="slider-title">Hướng dẫn đến: {destinationName}</h2>

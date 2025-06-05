@@ -12,11 +12,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const repoName = "/bvyersin-indoornav";
+const GITHUB_PAGES_REPO_NAME = "bvyersin-indoornav";
+const basename = import.meta.env.DEV ? "/" : `/${GITHUB_PAGES_REPO_NAME}/`;
 
 function App() {
   return (
-    <Router basename={repoName}>
+    <Router basename={basename}>
       <div className="app-container">
         <Routes>
           {/* URL sẽ có dạng /?start=qr1 */}
